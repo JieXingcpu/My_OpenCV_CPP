@@ -1,0 +1,30 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "opencv4.11",
+            "command": "C:\\MinGW\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${workspaceFolder}\\Debugger\\${fileBasenameNoExtension}.exe",
+                "C:/opencv-4.11.0/build/install/x64/mingw/bin/libopencv_world4110.dll",
+                "-I",
+                "C:/opencv-4.11.0/build/install/include",
+                "-I",
+                "C:/opencv-4.11.0/build/install/include/opencv2"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "opencv4.11"
+        },
+    ],
+    "version": "2.0.0"
+}
