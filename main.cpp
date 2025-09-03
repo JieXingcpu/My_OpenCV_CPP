@@ -15,8 +15,8 @@ int main()
         camera>>video;
         while(camera.read(video)){
             camera>>video;
-            // cv::cvtColor(video,gray_video,cv::COLOR_BGR2GRAY);
-            // cv::imshow("camera",gray_video);
+            cv::cvtColor(video,gray_video,cv::COLOR_BGR2GRAY);
+            cv::imshow("camera",gray_video);
             if(cv::waitKey(20)==27){
                 break;
             }
